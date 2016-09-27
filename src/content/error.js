@@ -11,7 +11,6 @@ class Error extends React.Component {
             <section>
                 <div className="sectionContent">
                     Die von Ihnen angeforderte Seite konnte nicht gefunden werden.<br />
-                    <Link to="/">Hier geht es zurück zur Startseite</Link>
                 </div>
             </section>
         );
