@@ -1,0 +1,85 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    position: fixed;
+    z-index: 99;
+    background: #eff0f2;
+    width: 100%;
+    display: flex;
+    border-bottom: 4px solid #8dc04e;
+    box-shadow: 0 8px 10px #999;
+}
+nav > .content {
+    width: 1024px;
+    margin: 0 auto;
+}
+nav > .content > img {
+    position: absolute;
+    max-width: 20%;
+}
+nav > .content > .navigation {
+    list-style: none;
+    margin: 0 0 0 95px;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: stretch;
+    align-items: flex-start;
+}
+nav > .content > .navigation > h2 {
+    order: 0;
+    flex: 1 1 auto;
+    align-self: flex-start;
+}
+nav > .content > .navigation > li {
+    order: 0;
+    flex: 0 0 auto;
+    align-self: auto;
+}
+nav > .content > .navigation > h2 > a {
+    text-decoration: none;
+    display: block;
+    color: #000;
+}
+nav > .content > .navigation > li > a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: #000;
+}
+@media all and (max-width: 1030px){
+    nav > .content > img {
+        left: 15px;
+    }
+}
+@media all and (max-width: 759px) {
+    nav > .content > img {
+        top: 15px;
+    }
+    nav > .content > .navigation {
+        /* On small screens, we are no longer using row direction but column */
+        flex-direction: column;
+    }
+}
+@media all and (max-width: 320px) {
+    nav > .content > .navigation {
+        margin: 0 0 0 70px;
+    }
+}
+
+section {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    top: 110px;
+}
+section > .sectionContent {
+    width: 804px;
+    margin: 0 auto;
+}
+section > * {
+}
