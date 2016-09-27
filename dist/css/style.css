@@ -51,26 +51,6 @@ nav > .content > .navigation > li > a {
     padding: 1em;
     color: #000;
 }
-@media all and (max-width: 1030px){
-    nav > .content > img {
-        left: 15px;
-    }
-}
-@media all and (max-width: 759px) {
-    nav > .content > img {
-        top: 15px;
-    }
-    nav > .content > .navigation {
-        /* On small screens, we are no longer using row direction but column */
-        flex-direction: column;
-    }
-}
-@media all and (max-width: 320px) {
-    nav > .content > .navigation {
-        margin: 0 0 0 70px;
-    }
-}
-
 section {
     display: flex;
     flex-flow: row wrap;
@@ -82,4 +62,26 @@ section > .sectionContent {
     margin: 0 auto;
 }
 section > * {
+}
+
+@media all and (max-width: 1030px){
+    nav > .content > img {
+        left: 15px;
+    }
+}
+@media all and (max-width: 759px) {
+    nav > .content > img {
+        top: 15px;
+    }
+    nav > .content > .navigation {
+        flex-direction: column;
+    }
+    section {
+        top: 240px;
+    }
+}
+@media all and (max-width: 320px) {
+    nav > .content > .navigation {
+        margin: 0 0 0 70px;
+    }
 }

@@ -7,15 +7,20 @@ import {Provider} from "react-redux";
 import App from "./components/app";
 import store from "./store/store";
 import Error from "./content/error";
-import Content from "./content/content";
+import Startpage from "./content/startpage";
+import AboutMe from "./content/about_me";
+import Contact from "./content/contact";
+import Stories from "./content/stories";
 
 if(document.getElementById("main")) {
     ReactDOM.render(
         <Provider store={store}>
             <Router history={hashHistory}>
                 <Route path="/" component={App}>
-                    <IndexRoute component={Content}/>
-                    <Route path="/" component={Content}/>
+                    <IndexRoute component={Startpage}/>
+                    <Route path="/about_me" component={AboutMe}/>
+                    <Route path="/contact" component={Contact}/>
+                    <Route path="/stories" component={Stories}/>
                     <Route path="*" component={Error}/>
                 </Route>
             </Router>

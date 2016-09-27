@@ -1,21 +1,20 @@
 import React from 'react';
 import {Link} from 'react-router';
 
-class Content extends React.Component {
+class Stories extends React.Component {
     constructor(props) {
         super(props);
-        this.displayName = 'Content';
+        this.displayName = 'Stories';
     }
     render() {
         return (
             <section>
                 <div className="sectionContent">
-                Herzlich willkommen<br />
-                <Link to="/test">Hier geht es zurück zur Startseite</Link>
+                    Stories<br />
                 </div>
             </section>
         );
     }
 }
 
-export default Content;
+export default Stories;

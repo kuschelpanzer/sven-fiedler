@@ -12,10 +12,10 @@ class Navigation extends React.Component {
                 <div className="content">
                     <img src="images/logo.png" alt="logo" />
                     <ul className="navigation">
-                        <h2><a href="/" title="Sven-Fiedler.de - Herzlich Willkommen">www.sven-fiedler.de</a></h2>
-                        <li><a href="#">über mich</a></li>
-                        <li><a href="#">Kontakt</a></li>
-                        <li><a href="#">Geschichten</a></li>
+                        <h2><Link to="/" title="Sven-Fiedler.de - Herzlich Willkommen">www.sven-fiedler.de</Link></h2>
+                        <li><Link to="/about_me" title="Über mich">über mich</Link></li>
+                        <li><Link to="/contact" title="Kontakt">Kontakt</Link></li>
+                        <li><Link to="/stories" title="Witzige und Dumme Geschichten">Geschichten</Link></li>
                     </ul>
                 </div>
             </nav>
