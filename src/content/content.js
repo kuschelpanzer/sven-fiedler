@@ -10,19 +10,7 @@ class Content extends React.Component {
         return (
             <section>
                 <div className="sectionContent">
-                Herzlich willkommen<br /><br /><br /><br /><br /><br />
-                Herzlich willkommen<br /><br /><br /><br /><br /><br />
-                Herzlich willkommen<br /><br /><br /><br /><br /><br />
-                Herzlich willkommen<br /><br /><br /><br /><br /><br />
-                Herzlich willkommen<br /><br /><br /><br /><br /><br />
-                Herzlich willkommen<br /><br /><br /><br /><br /><br />
-                Herzlich willkommen<br /><br /><br /><br /><br /><br />
-                Herzlich willkommen<br /><br /><br /><br /><br /><br />
-                Herzlich willkommen<br /><br /><br /><br /><br /><br />
-                Herzlich willkommen<br /><br /><br /><br /><br /><br />
-                Herzlich willkommen<br /><br /><br /><br /><br /><br />
-                Herzlich willkommen<br /><br /><br /><br /><br /><br />
-                Herzlich willkommen<br /><br /><br /><br /><br /><br />
+                Herzlich willkommen<br />
                 <Link to="/test">Hier geht es zurück zur Startseite</Link>
                 </div>
             </section>
