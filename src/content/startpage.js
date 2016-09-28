@@ -9,18 +9,23 @@ class Startpage extends React.Component {
         this.displayName = 'Startpage';
         this.props.onload();
     }
+
+    createMarkup(text) {
+        return {__html: text};
+    };
+
     render() {
         return(
             <section>
                 { this.props.fetching ?
                     <div className="sectionContent">loading ... </div>
                     :
-                     this.props.content.start ?
+                    this.props.content.start ?
                         <div className="sectionContent">
-                            {this.props.content.start.title}<br />
+                            <h2>{this.props.content.start.title}</h2>
+                            <div dangerouslySetInnerHTML={this.createMarkup(this.props.content.start.description)} />
                         </div>
                     : <div className="sectionContent">Fehler</div>
-                    }
                 }
             </section>
         );
@@ -29,7 +34,7 @@ class Startpage extends React.Component {
 
 const mapStateToProps = (state) => {
     return {
-        content: state.content,
+        content: state.content.content,
         fetching: state.content.isFetching
     };
 };

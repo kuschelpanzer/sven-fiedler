@@ -1,6 +1,6 @@
 {
   "start": {
     "title": "Herzlich Willkommen auf meiner Seite",
-    "description": "Hier könnte eine Beschreibung der Seite stehen, wenn ich denn wollte"
+    "description": "Hier könnte eine <br />Beschreibung der Seite stehen, wenn ich denn wollte"
   }
 }

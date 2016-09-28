@@ -10,7 +10,6 @@ export function getContent(link) {
 }
 
 function loadContent(link) {
-    console.log(link);
     return axios.get(link);
 }
 

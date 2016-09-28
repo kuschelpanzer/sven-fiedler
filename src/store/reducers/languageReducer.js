@@ -5,7 +5,6 @@ export function language (state = {language: "de"}) {
 export function content (state = {content: {}, isFetching: true}, action) {
     switch(action.type) {
         case 'REQUEST_POSTS_SUCCESS':
-            console.log(action.items);
             return {
                 ...state,
                 content: action.items,
