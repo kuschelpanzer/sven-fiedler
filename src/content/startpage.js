@@ -20,10 +20,10 @@ class Startpage extends React.Component {
                 { this.props.fetching ?
                     <div className="sectionContent">loading ... </div>
                     :
-                    this.props.content.start ?
+                    this.props.content ?
                         <div className="sectionContent">
-                            <h2>{this.props.content.start.title}</h2>
-                            <div dangerouslySetInnerHTML={this.createMarkup(this.props.content.start.description)} />
+                            <h2>{this.props.content.title}</h2>
+                            <div dangerouslySetInnerHTML={this.createMarkup(this.props.content.description)} />
                         </div>
                     : <div className="sectionContent">Fehler</div>
                 }

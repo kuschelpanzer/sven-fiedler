@@ -1,7 +1,11 @@
 body, html {
     margin: 0;
     padding: 0;
-    background: #eff0f2;
+    background: #fff;
+    height: 100%;
+}
+main, #main {
+    height: 100%;
 }
 nav {
     position: fixed;
@@ -56,11 +60,16 @@ section {
     display: flex;
     flex-flow: row wrap;
     position: relative;
-    top: 110px;
+    top: 70px;
+    min-height: calc(100% - 70px);
 }
 section > .sectionContent {
     width: 804px;
     margin: 0 auto;
+    padding: 40px 10px 10px;
+    border-right: 2px solid #8dc04e;
+    border-left: 2px solid #8dc04e;
+    background: #eff0f2;
 }
 section > * {
 }
@@ -68,6 +77,11 @@ section > * {
 @media all and (max-width: 1030px){
     nav > .content > img {
         left: 15px;
+    }
+}
+@media all and (max-width: 830px) {
+    section > .sectionContent {
+        border: 0;
     }
 }
 @media all and (max-width: 759px) {
@@ -78,7 +92,8 @@ section > * {
         flex-direction: column;
     }
     section {
-        top: 240px;
+        top: 220px;
+        min-height: calc(100% - 220px);
     }
 }
 @media all and (max-width: 320px) {
